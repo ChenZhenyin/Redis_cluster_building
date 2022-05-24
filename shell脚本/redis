@@ -1,0 +1,451 @@
+#!/bin/sh
+# chkconfig: 2345 10 90
+# description: redis cmd
+#
+# Simple Redis init.d script conceived to work on Linux systems
+# as it does use of the /proc filesystem.
+
+EXEC=/usr/local/bin/redis-server
+CLIEXEC=/usr/local/bin/redis-cli
+
+PORT_6479=6479
+PIDFILE_6479=/var/run/redis_${PORT_6479}.pid
+CONF_6479="/etc/redis/${PORT_6479}.conf"
+
+PORT_6480=6480
+PIDFILE_6480=/var/run/redis_${PORT_6480}.pid
+CONF_6480="/etc/redis/${PORT_6480}.conf"
+
+PORT_6481=6481
+PIDFILE_6481=/var/run/redis_${PORT_6481}.pid
+CONF_6481="/etc/redis/${PORT_6481}.conf"
+
+PORT_7479=7479
+PIDFILE_7479=/var/run/redis_${PORT_7479}.pid
+CONF_7479="/etc/redis/${PORT_7479}.conf"
+
+PORT_7480=7480
+PIDFILE_7480=/var/run/redis_${PORT_7480}.pid
+CONF_7480="/etc/redis/${PORT_7480}.conf"
+
+PORT_7481=7481
+PIDFILE_7481=/var/run/redis_${PORT_7481}.pid
+CONF_7481="/etc/redis/${PORT_7481}.conf"
+
+PORT_6579=6579
+PIDFILE_6579=/var/run/redis_${PORT_6579}.pid
+CONF_6579="/etc/redis/${PORT_6579}.conf"
+
+PORT_7579=7579
+PIDFILE_7579=/var/run/redis_${PORT_7579}.pid
+CONF_7579="/etc/redis/${PORT_7579}.conf"
+
+PORT_6679=6679
+PIDFILE_6679=/var/run/redis_${PORT_6679}.pid
+CONF_6679="/etc/redis/${PORT_6679}.conf"
+
+PORT_7679=7679
+PIDFILE_7679=/var/run/redis_${PORT_7679}.pid
+CONF_7679="/etc/redis/${PORT_7679}.conf"
+
+PORT_6779=6779
+PIDFILE_6779=/var/run/redis_${PORT_6779}.pid
+CONF_6779="/etc/redis/${PORT_6779}.conf"
+
+PORT_6780=6780
+PIDFILE_6780=/var/run/redis_${PORT_6780}.pid
+CONF_6780="/etc/redis/${PORT_6780}.conf"
+
+PORT_6781=6781
+PIDFILE_6781=/var/run/redis_${PORT_6781}.pid
+CONF_6781="/etc/redis/${PORT_6781}.conf"
+
+PORT_7779=7779
+PIDFILE_7779=/var/run/redis_${PORT_7779}.pid
+CONF_7779="/etc/redis/${PORT_7779}.conf"
+
+PORT_7780=7780
+PIDFILE_7780=/var/run/redis_${PORT_7780}.pid
+CONF_7780="/etc/redis/${PORT_7780}.conf"
+
+PORT_7781=7781
+PIDFILE_7781=/var/run/redis_${PORT_7781}.pid
+CONF_7781="/etc/redis/${PORT_7781}.conf"
+
+case "$1" in
+    start)
+        if [ -f $PIDFILE_6479 ]
+        then
+                echo "$PIDFILE_6479 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6479
+        fi
+
+        if [ -f $PIDFILE_6480 ]
+        then
+                echo "$PIDFILE_6480 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6480
+        fi
+
+        if [ -f $PIDFILE_6481 ]
+        then
+                echo "$PIDFILE_6481 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6481
+        fi
+
+        if [ -f $PIDFILE_7479 ]
+        then
+                echo "$PIDFILE_7479 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7479
+        fi
+
+        if [ -f $PIDFILE_7480 ]
+        then
+                echo "$PIDFILE_7480 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7480
+        fi
+
+        if [ -f $PIDFILE_7481 ]
+        then
+                echo "$PIDFILE_7481 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7481
+        fi
+
+        if [ -f $PIDFILE_6579 ]
+        then
+                echo "$PIDFILE_6579 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6579
+        fi
+
+        if [ -f $PIDFILE_7579 ]
+        then
+                echo "$PIDFILE_7579 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7579
+        fi
+
+        if [ -f $PIDFILE_6679 ]
+        then
+                echo "$PIDFILE_6679 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6679
+        fi
+
+        if [ -f $PIDFILE_7679 ]
+        then
+                echo "$PIDFILE_7679 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7679
+        fi
+
+        if [ -f $PIDFILE_6779 ]
+        then
+                echo "$PIDFILE_6779 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6779
+        fi
+
+        if [ -f $PIDFILE_6780 ]
+        then
+                echo "$PIDFILE_6780 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6780
+        fi
+
+        if [ -f $PIDFILE_6781 ]
+        then
+                echo "$PIDFILE_6781 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_6781
+        fi
+
+        if [ -f $PIDFILE_7779 ]
+        then
+                echo "$PIDFILE_7779 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7779
+        fi
+
+        if [ -f $PIDFILE_7780 ]
+        then
+                echo "$PIDFILE_7780 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7780
+        fi
+
+        if [ -f $PIDFILE_7781 ]
+        then
+                echo "$PIDFILE_7781 exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF_7781
+        fi
+
+        ;;
+    stop)
+        if [ ! -f $PIDFILE_6479 ]
+        then
+                echo "$PIDFILE_6479 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6479)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6479 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6480 ]
+        then
+                echo "$PIDFILE_6480 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6480)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6480 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6481 ]
+        then
+                echo "$PIDFILE_6481 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6481)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6481 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7479 ]
+        then
+                echo "$PIDFILE_7479 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7479)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7479 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7480 ]
+        then
+                echo "$PIDFILE_7480 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7480)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7480 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7481 ]
+        then
+                echo "$PIDFILE_7481 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7481)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7481 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6579 ]
+        then
+                echo "$PIDFILE_6579 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6579)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6579 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7579 ]
+        then
+                echo "$PIDFILE_7579 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7579)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7579 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6679 ]
+        then
+                echo "$PIDFILE_6679 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6679)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6679 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7679 ]
+        then
+                echo "$PIDFILE_7679 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7679)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7679 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6779 ]
+        then
+                echo "$PIDFILE_6779 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6779)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6779 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6780 ]
+        then
+                echo "$PIDFILE_6780 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6780)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6780 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_6781 ]
+        then
+                echo "$PIDFILE_6781 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_6781)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_6781 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7779 ]
+        then
+                echo "$PIDFILE_7779 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7779)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7779 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7780 ]
+        then
+                echo "$PIDFILE_7780 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7780)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7780 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        if [ ! -f $PIDFILE_7781 ]
+        then
+                echo "$PIDFILE_7781 does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE_7781)
+                echo "Stopping ..."
+                $CLIEXEC -p $PORT_7781 shutdown
+                while [ -x /proc/${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+
+        ;;
+    *)
+        echo "Please use start or stop as first argument"
+        ;;
+esac
