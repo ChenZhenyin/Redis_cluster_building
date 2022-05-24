@@ -23,7 +23,7 @@ mv /etc/redis /etc/redis_bak
 
 ## 3.升级redis版本，配置redis配置文件
 
-此处更换为redis版本5.0.6，压缩包放在文75件夹中，解压并源码包安装
+此处更换为redis版本5.0.6，压缩包放在文件夹中，解压并源码包安装
 
 ``` shell
 tar -zxvf redis-5.0.6.tar.gz
